@@ -1,0 +1,13 @@
+1.要引入的rem库名字叫lib-flexible
+2.vue-cli3 px转rem (https://blog.csdn.net/u010214074/article/details/84841496)
+3.vue-cli eslint vscode代码格式化 (https://blog.csdn.net/a460550542/article/details/84402620)
+4.获取元素的宽(包括padding)用clientWidth, padding与border与自身宽用offsetWidth
+5.类似今日头条导航不要用flex布局,给子元素加inline-block即可
+6. 1) 父组件ajax请求导航数据后传给子组件,子组件初始化btscroll
+   2) 子组件用watch监听传来的导航数据
+   3) 传来的数据有2种可能, [第一次监听为空数组 -> 第二次监听为数据] , [第一次监听为数据] ,为了处理这两种情况,watch加入immediate即可,代表只要传过来就执行
+7.写vue路由的子路由path路径千万别写"/",因为它代表根路径
+8.dom.classList返回的是一个类数组,要变为数组才能用数组方法
+9.less scope导致父容器的子元素无法控制,.content /deep/ p {
+    font-size: 40px !important;
+  }
