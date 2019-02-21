@@ -10,27 +10,27 @@
           <div class="t">
             <ul>
               <li>
-                <span>0</span>
+                <span>1018</span>
                 <span>新闻</span>
               </li>
               <li>
-                <span>0</span>
+                <span>9</span>
                 <span>关注</span>
               </li>
               <li>
-                <span>0</span>
+                <span>86万</span>
                 <span>粉丝</span>
               </li>
               <li>
-                <span>0</span>
+                <span>620万</span>
                 <span>赞赏</span>
               </li>
             </ul>
           </div>
           <div class="b">
-            <span>私信</span>
-            <span>关注</span>
-            <span class="iconfont">下</span>
+            <span class="letter">私信</span>
+            <span class="follow">已关注</span>
+            <span class="btn iconfont">下</span>
           </div>
         </div>
       </div>
@@ -96,4 +96,78 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="less" scoped>
+.brief{
+      padding:20px 20px;
+      border-bottom: 13px solid #efefef;
+}
+  .top{
+    display:flex;
+
+      padding-bottom:30px;
+    .img{
+      width: 170px;
+      height:170px;
+      overflow:hidden;
+      border-radius:50%;
+      border:1px solid #ccc;
+      img{
+        width:100%;
+        height:auto;
+      }
+    }
+    .right{
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex:1;
+      margin-left:60px;
+      margin-right:20px;
+      .t{
+        ul{
+          display:flex;
+            justify-content: space-between;
+          li{
+            display:flex;
+            flex-direction: column;
+            text-align: center;
+            span{
+              &:nth-of-type(1){
+                font-weight:bold;
+                font-size:30px
+              }
+              &:nth-of-type(2){
+                font-size:25px;
+                margin-top:8px;
+                color:#a09b9b;
+              }
+            }
+          }
+        }
+      }
+      .b{
+        display:flex;
+        .letter{
+          padding:10px 22px;
+        }
+        .btn{
+          padding:10px 15px;
+        }
+  .follow{
+    flex:1;
+    margin:0 20px;
+    align-items:center;
+    justify-content: center;
+    display:flex;
+  }
+        span{
+          font-size:30px;
+    border-radius:10px;
+          border:1px solid #ccc;
+
+        }
+      }
+    }
+  }
+</style>
+

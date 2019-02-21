@@ -3,11 +3,10 @@
     <!-- slides -->
     <swiper-slide :key="index" v-for="(item, index) in data">
       <a target="_blank" :href="item.url">
-        <img :src="item.img" alt="" />
+        <img :src="item.img" alt>
       </a>
     </swiper-slide>
     <!-- Optional controls -->
-    
     <div class="swiper-pagination" slot="pagination"></div>
     <!-- <div class="swiper-button-prev" slot="button-prev"></div> -->
     <!-- <div class="swiper-button-next" slot="button-next"></div> -->
@@ -35,10 +34,9 @@ export default {
         autoplay: 3000,
         pagination: {
           el: ".swiper-pagination",
-          type: 'fraction',
+          type: "fraction"
         },
-          loop:true
-
+        loop: true
       }
     };
   }
@@ -58,14 +56,14 @@ export default {
   width: 20px;
   height: 20px;
 }
-.page{
-    position:absolute;
-    bottom:0;
-    width:100%;
-  color:#fff;
+.page {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
 }
-.swiper-pagination{
-  color:#fff;
-  font-size:35px;
+.swiper-pagination {
+  color: #fff;
+  font-size: 35px;
 }
 </style>

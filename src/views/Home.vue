@@ -43,12 +43,11 @@ export default {
       page: 1,
       isloadingshow: false /* 没有请求数据为false,正在请求数据为true */,
       loadingInnerHTML: true /* 是否显示loading或没有数据 */,
-      focus: [],
+      focus: []
     };
   },
   watch: {
     $route(to, from) {
-
       // 处理同一home组件列表query变化则数据变化
       if (to.name === "home" && from.name === "home") {
         this.listData = [];
